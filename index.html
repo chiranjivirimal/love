@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Aayusha 💖</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(135deg, #ffe0ec, #f3f4f6);
+      overflow: hidden;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      animation: slideFadeIn 2s ease-out forwards;
+      opacity: 0;
+      transform: translateY(40px);
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #d63384;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      white-space: pre-line;
+    }
+
+    @keyframes slideFadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Floating hearts background */
+    .heart {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      background-color: #ff6b81;
+      transform: rotate(45deg);
+      animation: float 10s linear infinite;
+      opacity: 0.6;
+    }
+
+    .heart::before, .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #ff6b81;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) rotate(45deg);
+        opacity: 0;
+      }
+      50% {
+        opacity: 0.6;
+      }
+      100% {
+        transform: translateY(-10vh) rotate(45deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating hearts -->
+  <script>
+    for (let i = 0; i < 20; i++) {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (8 + Math.random() * 5) + 's';
+      heart.style.animationDelay = Math.random() * 5 + 's';
+      document.body.appendChild(heart);
+    }
+  </script>
+
+  <div class="container">
+    <h1>For Aayusha 💌</h1>
+    <p>It’s been 20 months… 20 months of laughter, late-night talks 🌙, silly fights, deep conversations 💬, countless memories, and moments that made my heart feel something I had never felt before ❤️. From the very first time we started talking, to the way we slowly became each other's comfort, best friend, and person—I’ve cherished every second of this journey with you, Aayusha.
+
+We’ve had our ups and downs ⬆️⬇️, and yes, we both have made mistakes. We’ve hurt each other, knowingly or unknowingly 💔. But through it all, one thing has never changed—my love for you. And if anything, this distance, this recent gap, this silence… it’s only made me realize how deeply I need you in my life 💭.
+
+I don’t want to hold onto the past anymore 🕰️. I don’t care who was right or wrong. I’m ready to let go of my ego, my attitude, my expectations—because you matter more than any of that 🙏. You are not just a part of my life; you are my life 🌍.
+
+I want to say sorry for everything I’ve done that hurt you 😔. I’ve realized my mistakes, and I’m not here to make excuses—I just want a chance to make things right. A fresh start. A new beginning 🌱.
+
+I miss the warmth of your voice, the way your eyes sparkled when you smiled ✨, the way we used to talk about the future like we already belonged to each other. I miss us so much 🥺. And the truth is—I can't go forward without you 🚫➡️. I can't imagine my life without you in it 🤍.
+
+No matter what happened in the past, and no matter what the future holds, I want to be with you. Permanently. Forever ♾️. Through every fight, every laugh, every breakdown, and every celebration—I want you. Only you 👩‍❤️‍👨.
+
+I love you madly, Mutu ❤️‍🔥. And I always will. Let’s forget everything else and start a new chapter, just you and me—stronger, wiser, and more in love than ever before ✨.</p>
+  </div>
+</body>
+</html>
